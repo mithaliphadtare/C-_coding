@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+    char div;
+    int roll;
+    cout<<"Enter Roll no.";
+    cin>>roll;
+    cout<<"Enter Division";
+    cin>>div;
+    cout<<"Mithali Sanjay Phadtare\n";
+    cout<<roll<<"\n";
+    cout<<div;
+    return 0;
+
+}
