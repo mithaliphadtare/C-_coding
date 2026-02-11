@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int main(){
+    float a,b,add,sub,mult,div;
+    cout<<"Enter two numbers";
+    cin>>a>>b;
+    add=a+b;
+    sub=a-b;
+    mult=a*b;
+    div=a/b;
+    cout<<"addition="<<add<<"\n";
+    cout<<"substraction="<<sub<<"\n";
+    cout<<"multiplication="<<mult<<"\n";
+    cout<<"division="<<div<<"\n";
+
+    return 0;
+
+}
