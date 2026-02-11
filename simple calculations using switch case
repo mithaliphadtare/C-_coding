@@ -27,6 +27,10 @@ int main(){
     ans=a/b;
     cout<<ans;
     break;
+
+    default:
+    cout<<"Invalid operation";
+    break;
     }
 
     return 0;
