@@ -1,0 +1,66 @@
+#include<iostream>
+using namespace std;
+
+int prime(int x){
+int i,isprime;
+for(i=2;i<x;i++){
+if(x%i==0){
+isprime=0;
+break;
+}
+
+}
+if(x==0 or x==1){
+cout<<"neither  prime nor composite"<<endl;
+}
+
+else{
+if(isprime==0){
+cout<<"not prime"<<endl;
+}
+else{
+cout<<"prime"<<endl;
+}
+}
+
+}
+
+int check(int x){
+if(x%2==0){
+cout<<"Even"<<endl;
+}
+else{
+cout<<"Not Even"<<endl;
+}
+}
+
+int ispos(int x){
+if(x==0){
+cout<<"zero";}
+else if(x>0){
+cout<<"Positive"<<endl;}
+else{
+cout<<"Negative"<<endl;}
+}
+
+int fib(int x){
+int a=0,b=1,next,i;
+for(i=1;i<=x;i++){
+cout<<a<<" ";
+next=a+b;
+a=b;
+b=next;
+}
+}
+
+
+int main(){
+int x,result1,result2,result3,result4;
+cout<<"enter the num:";
+cin>>x;
+result1=prime(x);
+result2=check(x);
+result3=ispos(x);
+result4=fib(x);
+return 0;
+}
