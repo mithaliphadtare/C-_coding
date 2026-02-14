@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+
+
+
+int main(){
+int x;
+cout<<"enter the num:";
+cin>>x;
+int i,isprime;
+for(i=2;i<x;i++){
+if(x%i==0){
+isprime=0;
+break;
+}
+
+}
+if(x==0 or x==1){
+cout<<"neither  prime nor composite";
+}
+
+else{
+if(isprime==0){
+cout<<"not prime";
+}
+else{
+cout<<"prime";
+}
+}
+
+return 0;
+}
