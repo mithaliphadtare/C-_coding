@@ -1,0 +1,49 @@
+int x,y,z;
+public:
+ ctr(){
+ x=10;
+ y=20;
+ z=x+y;
+ }
+
+ ctr(int a, int b){
+ x=a;
+ y=b;
+ z=a+b;
+ }
+
+ ctr(ctr &cpy){
+ x=cpy.x;
+ y=cpy.y;
+ z=x+y;
+ }
+
+ void display(){
+ cout<<"x"<<x<<endl;
+ cout<<"y"<<y<<endl;
+ cout<<"z"<<z<<endl;
+ }
+ ~ctr(){
+
+cout<<"Destroyed"<<endl;
+}
+
+};
+
+
+int main() {
+cout<<"Default constructor:\n";
+ctr cobj1;
+cobj1.display();
+cout<<"Parameterised Constructor:\n";
+ctr cobj2(5,7);
+cobj2.display();
+cout<<"Copy Constructor:\n";
+ctr cobj3(cobj2);
+cobj3.display();
+
+
+
+
+return 0;
+}
