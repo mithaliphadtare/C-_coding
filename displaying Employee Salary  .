@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+class emp{
+public:
+ int  en;
+ float bs,sal;
+ char ename[100];
+public:
+ void setdata(){
+ cout<<"Enter Your Employee Number:";
+ cin>>en;
+  cout<<"Enter Your Employee Name:";
+ cin>>ename;
+ cout<<"Enter Your Basic salary:";
+ cin>>bs;
+ }
+
+
+ void compute(){
+ int da=0.40*bs;
+ int it=0.10*bs;
+ sal= bs+da-it;
+ cout<<"salary:"<<sal;
+ }
+
+};
+
+
+int main() {
+emp obj;
+obj.setdata();
+obj.compute();
+
+
+
+return 0;
+}
