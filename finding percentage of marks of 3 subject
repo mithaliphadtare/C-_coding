@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+class count{
+public:
+int sub1,sub2,sub3,tot;
+float per;
+public:
+void setdata(){
+cout<<"enter marks of three subject:";
+cin>>sub1>>sub2>>sub3;
+}
+void display(){
+tot=sub1+sub2+sub3;
+per=tot/3;
+cout<<"percentage of marks is :"<<per<<"%";
+}
+};
+
+int main(){
+count obj;
+obj.setdata();
+obj.display();
+return 0;
+
+}
