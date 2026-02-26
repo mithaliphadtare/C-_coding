@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+class B;
+class count1{
+friend class B;
+public:
+int sub1,sub2;
+public:
+count1(int x,int y){
+sub1=x;
+sub2=y;
+}
+
+count1(float z, int w){
+sub1=z;
+sub2=w;
+}
+
+void display(){
+cout<<sub1<<endl;
+cout<<sub2<<endl;
+}
+
+
+};
+
+class B{
+public:
+void display2(count1 &obj)
+{
+cout<<obj.sub1<<"  "<<obj.sub2;
+}
+};
+
+int main(){
+count1 obj1(34,78);
+obj1.display();
+B obj2;
+obj2.display2(obj1);
+
+return 0;
+
+}
