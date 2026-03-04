@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+class A{
+private:
+int x;int y;
+public:
+A(){
+x=10;
+y=20;
+}
+friend void display(A &obj);
+};
+void display(A &obj){
+cout<<"x"<<obj.x;
+cout<<"y"<<obj.y;
+}
+
+int main(){
+A obj1;
+display(obj1);
+return 0;
+}
