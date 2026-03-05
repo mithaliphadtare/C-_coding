@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+class parent{
+private:
+int x;
+protected:
+int y;
+public:
+int z;
+
+public:
+parent(){
+x=10;y=20;z=30;
+}
+};
+
+class child:public parent{
+public:
+void print(){
+//cout<<x<<endl;
+cout<<y<<endl;
+cout<<z<<endl;
+}
+};
+
+int main(){
+child obj;
+obj.print();
+//cout<<obj.x<<endl;
+//cout<<obj.y<<endl;
+cout<<obj.z<<endl;
+
+return 0;
+}
