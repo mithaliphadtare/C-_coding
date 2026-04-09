@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+class over{
+int x,y;
+public:
+over(int a=0,int b=0){
+x=a;
+y=b;
+}
+over operator +(){
+return over(x,y);
+}
+over operator -(){
+return over(-x,-y);
+}
+void display(){
+cout<<"Numbers are:"<<endl;
+cout<<x<<"\n"y;
+}
+};
+int main(){
+over obj(3,8);
+over obj1=+obj;
+obj1.display();
+
+over obj2=-obj;
+obj2.display();
+return 0;
+
+}
