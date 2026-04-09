@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+
+class over{
+int a;
+public:
+void get(){
+cout<<"enter any number for object :\n";
+cin>>a;
+}
+void display(){
+cout<<"value of A:\n";
+cout<<a;
+}
+
+over operator +(over obj2){
+over obj4;
+obj4.a=a+obj2.a;
+}
+
+
+};
+
+
+
+int main(){
+over obj1, obj2, obj3;
+obj1.get();
+
+
+obj2.get();
+
+
+obj3=obj1+obj2;
+obj1.display();
+obj2.display();
+obj3.display();
+return 0;
+
+}
+
