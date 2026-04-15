@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+class test{
+public:
+int a;
+mutable int b;
+public:
+test(int x=0,int y=0){
+a=x;
+b=y;
+}
+void display(){
+cout<<a;
+cout<<b;
+}
+};
+
+int main(){
+const test tobj(10,20);
+cout<<tobj.a<<tobj.b;
+tobj.b=45;
+cout<<tobj.a<<tobj.b;
+return 0;
+}
