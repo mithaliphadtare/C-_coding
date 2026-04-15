@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+class Demo{
+public:
+explicit Demo(int x)
+{
+cout<<"x :"<<x;
+}
+};
+int main(){
+//Demo dobj=3;
+Demo dobj(10);
+return 0;
+}
