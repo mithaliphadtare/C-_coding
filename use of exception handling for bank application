@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main(){
+int pass,pass2,amt;
+pass=1234;
+int bal=7000;
+cin>>pass2;
+try{if(pass==pass2){
+cout<<"enter amount for withdraw:";
+cin>>amt;
+try{
+if(amt<bal){
+bal=bal-amt;
+cout<<bal;
+}
+else{
+string a="INSUFFICIENT BALANCE";
+throw a;
+}
+}
+catch(string a){
+cout<<a;
+}
+}
+else{
+throw pass2;
+}
+}
+catch(int){
+cout<<"password is wrong";
+}
+return 0;
+}
