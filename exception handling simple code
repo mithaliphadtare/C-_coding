@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main(){
+int a=50;
+try{if(a>60){
+cout<<"OK";
+}
+else{
+throw a;
+}
+}
+catch(int A){
+cout<<"NOT OK";
+}
+return 0;
+}
