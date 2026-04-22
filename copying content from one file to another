@@ -1,0 +1,19 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+
+int main(){
+
+//reading
+ifstream infile("file1.txt");
+ofstream op("file2.txt");
+
+string content;
+while(getline(infile,content)){
+op<<content<<endl;
+}
+cout<<"Data Copied!";
+infile.close();
+op.close();
+return 0;
+}
