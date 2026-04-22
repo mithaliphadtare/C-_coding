@@ -1,0 +1,22 @@
+#include<iostream>
+#include<fstream>
+using namespace std;
+
+int main(){
+//writing
+ofstream outfile("mit.txt");
+string name;
+getline(cin,name);
+outfile<<name;
+outfile.close();
+
+
+//reading
+ifstream infile("mit.txt");
+string name2;
+getline(infile,name2);
+cout<<name2;
+infile.close();
+return 0;
+}
+
